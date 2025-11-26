@@ -1,6 +1,8 @@
-# ESP32-C3 GPS NMEA → UDP Bridge
+# ESP32 GPS NMEA → UDP Bridge
 
-ESP32-C3 firmware that reads NMEA data from u-blox GPS receiver and forwards it via UDP.
+ESP32 firmware that reads NMEA data from u-blox GPS receiver and forwards it via UDP.
+
+**Note:** Works with ESP32 classic. For ESP32-C3, change board in `platformio.ini` to `esp32-c3-devkitm-1` and adjust GPIO pins.
 
 ## Features
 
@@ -13,9 +15,9 @@ ESP32-C3 firmware that reads NMEA data from u-blox GPS receiver and forwards it 
 
 ## Hardware
 
-- ESP32-C3 microcontroller
+- ESP32 microcontroller (classic, not C3)
 - u-blox GPS module (UART connection)
-- Default pins: RX=20, TX=21
+- Default pins: RX=20, TX=21 (configurable in code)
 
 ## Building
 
